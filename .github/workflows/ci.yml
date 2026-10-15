@@ -64,6 +64,11 @@ jobs:
           node examples/raptor-engine/build.mjs
           node examples/raptor-engine/build.mjs --light
 
+      - name: Request path
+        run: |
+          node examples/request-path/build.mjs
+          node examples/request-path/build.mjs --light
+
       - name: Committed pages are unchanged
         run: |
           git status --short
